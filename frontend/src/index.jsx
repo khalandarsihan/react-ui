@@ -1,8 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { BrowserRouter } from "react-router-dom"
+import { HashRouter } from "react-router-dom" // CHANGE THIS TO HASHROUTER
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import App from "./App"
+import App from "./App.jsx" // EXPLICITLY USE App.jsx
 import "./styles/globals.css"
 
 // Create a client
@@ -20,7 +20,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
+      <HashRouter>
         <App />      
+      </HashRouter>
     </QueryClientProvider>
   </React.StrictMode>,
 )

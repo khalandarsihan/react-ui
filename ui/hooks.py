@@ -41,50 +41,39 @@ page_js = {
     "bank-accounts": "public/react/bundle.js"
 }
 
-# Home page
-home_page = "dashboard"
+# include js, css files in header of web template
+web_include_css = "/assets/ui/react/styles.css"
+web_include_js = "/assets/ui/react/bundle.js"
 
-# Website route rules for React app
+# Create website route rules for your React app
 website_route_rules = [
-    {"from_route": "/react-app", "to_route": "react-app"},
-    {"from_route": "/react-app/*", "to_route": "react-app"},
-    
-    {"from_route": "/dashboard", "to_route": "dashboard"},
-    {"from_route": "/dashboard/*", "to_route": "dashboard"},
-    
-    {"from_route": "/companies", "to_route": "companies"},
-    {"from_route": "/companies/*", "to_route": "companies"},
-    
-    {"from_route": "/individuals", "to_route": "individuals"},
-    {"from_route": "/individuals/*", "to_route": "individuals"},
-    
-    {"from_route": "/invoices", "to_route": "invoices"},
-    {"from_route": "/invoices/*", "to_route": "invoices"},
-    
-    {"from_route": "/estimates", "to_route": "estimates"},
-    {"from_route": "/estimates/*", "to_route": "estimates"},
-    
-    {"from_route": "/works", "to_route": "works"},
-    {"from_route": "/works/*", "to_route": "works"},
-    
-    {"from_route": "/alerts", "to_route": "alerts"},
-    {"from_route": "/alerts/*", "to_route": "alerts"},
-    
-    {"from_route": "/staff", "to_route": "staff"},
-    {"from_route": "/staff/*", "to_route": "staff"},
-    
-    {"from_route": "/vehicles", "to_route": "vehicles"},
-    {"from_route": "/vehicles/*", "to_route": "vehicles"},
-    
-    {"from_route": "/payments", "to_route": "payments"},
-    {"from_route": "/payments/*", "to_route": "payments"},
-    
-    {"from_route": "/partners-contacts", "to_route": "partners-contacts"},
-    {"from_route": "/partners-contacts/*", "to_route": "partners-contacts"},
-    
-    {"from_route": "/legal-documents", "to_route": "legal-documents"},
-    {"from_route": "/legal-documents/*", "to_route": "legal-documents"},
-    
-    {"from_route": "/bank-accounts", "to_route": "bank-accounts"},
-    {"from_route": "/bank-accounts/*", "to_route": "bank-accounts"}
+    {"from_route": "/index", "to_route": "index"},
+    {"from_route": "/dashboard", "to_route": "index"},
+    {"from_route": "/companies", "to_route": "index"},
+    {"from_route": "/companies/*", "to_route": "index"},
+    {"from_route": "/individuals", "to_route": "index"},
+    {"from_route": "/individuals/*", "to_route": "index"},
+    {"from_route": "/invoices", "to_route": "index"},
+    {"from_route": "/invoices/*", "to_route": "index"},
+    {"from_route": "/estimates", "to_route": "index"},
+    {"from_route": "/estimates/*", "to_route": "index"},
+    {"from_route": "/works", "to_route": "index"},
+    {"from_route": "/works/*", "to_route": "index"},
+    {"from_route": "/alerts", "to_route": "index"},
+    {"from_route": "/alerts/*", "to_route": "index"},
+    {"from_route": "/staff", "to_route": "index"},
+    {"from_route": "/staff/*", "to_route": "index"},
+    {"from_route": "/vehicles", "to_route": "index"},
+    {"from_route": "/vehicles/*", "to_route": "index"},
+    {"from_route": "/payments", "to_route": "index"},
+    {"from_route": "/payments/*", "to_route": "index"},
+    {"from_route": "/legal-documents", "to_route": "index"},
+    {"from_route": "/legal-documents/*", "to_route": "index"},
+    {"from_route": "/bank-accounts", "to_route": "index"},
+    {"from_route": "/bank-accounts/*", "to_route": "index"},
+    {"from_route": "/partners-contacts", "to_route": "index"},
+    {"from_route": "/partners-contacts/*", "to_route": "index"},
 ]
+
+# Set the home page
+home_page = "index"
